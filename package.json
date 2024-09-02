@@ -7,8 +7,11 @@
   },
   "author": "noda",
   "dependencies": {
+    "@types/node": "^22.5.2",
+    "@types/node-json-db": "^0.9.3",
     "axios": "^1.7.7",
     "express": "^4.19.2",
+    "node-json-db": "^2.3.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
