@@ -9,11 +9,19 @@ export default class DBController {
 	}
 
 	public async updateNikaName(newName : string) : Promise<void> {
-		this.db.push('/NikaName', newName).then()
+		this.db.push('/NikaName', newName)
 	}
 
 	public async getNikaName() : Promise<string> {
 		return await this.db.getData('/NikaName')
+	}
+
+	public async setLastResponse(lastResponse : number) : Promise<void> {
+		this.db.push('/lastResponse', lastResponse)
+	}
+
+	public async getLastResponse() : Promise<number> {
+		return await this.db.getData('/lastResponse')
 	}
 	
 	public async getSchedule() : Promise<string> {
