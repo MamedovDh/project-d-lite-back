@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "ts-node ./src/services/schedule.ts"
+    "start": "ts-node ./src/services/schedule.ts",
+    "startA": "ts-node ./src/services/alisization.ts",
+    "schedule-json" : "ts-node ./src/services/test/nika.ts"
   },
   "author": "noda",
   "dependencies": {

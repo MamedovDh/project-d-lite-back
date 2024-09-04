@@ -28,7 +28,7 @@ async function getUpdateNikaName(){
 				'Cache-Control': 'no-cache' 
 			})				
 			return responseHtml.data.split('<script type="text/javascript"')[2].split('"')[1]
-		} catch(e){}
+		} catch(e){ console.error(e) }
 	} while (code !== 200)
 
 }

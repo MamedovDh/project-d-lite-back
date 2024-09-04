@@ -16,8 +16,9 @@ async function getNikaData(nikaName: string) {
 				//@ts-ignore
 				'Cache-Control': 'no-cache'
 			})
-			return JSON.parse(response.data.split('=')[1].replace(';', ''))
-		} catch (e) { }
+			const json = response.data.split('A=')[1].replace('"TEACH_EXCHANGE":{}};', '"TEACH_EXCHANGE":{}}')
+			return JSON.parse(json)
+		} catch (e) { console.error(e) }
 	} while (code !== 200)
 
 }
@@ -35,9 +36,9 @@ const createShedule = (NIKA: any) => {
 				const current = NIKA.CLASS_SCHEDULE['90']['034'][key]
 
 				day = {
-					lessons: [...day.lessons, NIKA.SUBJECTS[current.s[0]]],
-					rooms: [...day.rooms, NIKA.ROOMS[current.r[0]]],
-					teacher: [...day.teacher, NIKA.TEACHERS[current.t[0]]],
+					lessons: [...day.lessons, [ NIKA.SUBJECTS[current.s[0]],  NIKA.SUBJECTS[current.s[1]] ]],
+					rooms: [...day.rooms, [ NIKA.ROOMS[current.r[0]], NIKA.ROOMS[current.r[1]] ]],
+					teacher: [...day.teacher, [ NIKA.TEACHERS[current.t[0]], NIKA.TEACHERS[current.t[1]] ]],
 					number: [...day.number, Number(`${key[1]}${key[2]}`)]
 				}
 			}
