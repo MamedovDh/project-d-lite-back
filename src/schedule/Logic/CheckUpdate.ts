@@ -1,8 +1,9 @@
 import axios from 'axios'
-import DBController from 'shedule/Controllers/DB.controller'
+import DBController from 'schedule/Controllers/DB.controller'
 import { TIME_OUT_REQUEST } from '../../../config'
 
 export async function CheckUpdate(dbController : DBController) : Promise<Boolean> {
+	// /*TODO*/ return false
 	const lastTime = await dbController.getLastResponse()
 
 	if(Date.now() - lastTime >= TIME_OUT_REQUEST){
@@ -22,7 +23,7 @@ async function getUpdateNikaName(){
 	let code = 0;
 
 	do {
-		try{ console.log(123)
+		try{ console.log('request nikaName')
 			const responseHtml = await axios.get('https://lyceum.nstu.ru/rasp/m.schedule.html',{
 				//@ts-ignore
 				'Cache-Control': 'no-cache' 
