@@ -1,6 +1,6 @@
 {
-    "NikaName": "nika_data_20092024_144914.js",
-    "lastResponse": 1726821033993,
+    "NikaName": "nika_data_21092024_160554.js",
+    "lastResponse": 1726974336247,
     "schedule": [
         [
             {
@@ -23,54 +23,22 @@
                 "rooms": "113",
                 "num": 3,
                 "separately": false
-            }
-        ],
-        [
-            {
-                "teacher": "Рощенко О.Е.",
-                "lessons": "Теория вероятностей",
-                "rooms": "209",
-                "num": 1,
-                "separately": false
             },
             {
                 "teacher": [
-                    "Касымбаев Б.А.",
-                    "Муль П.Ф."
+                    "Дорожкина А.А.",
+                    "Харченко Ю.Д."
                 ],
                 "lessons": [
-                    "Инженерная графика",
-                    "Информатика"
+                    "Ин.яз",
+                    "Ин.яз"
                 ],
                 "rooms": [
-                    "2к502",
-                    "305"
+                    "212",
+                    "307"
                 ],
-                "num": 2,
-                "separately": true
-            },
-            {
-                "teacher": [
-                    "Муль П.Ф.",
-                    "Касымбаев Б.А."
-                ],
-                "lessons": [
-                    "Информатика",
-                    "Инженерная графика"
-                ],
-                "rooms": [
-                    "305",
-                    "2к502"
-                ],
-                "num": 3,
-                "separately": true
-            },
-            {
-                "teacher": "Борисова И.В.",
-                "lessons": "Русский язык",
-                "rooms": "309",
                 "num": 4,
-                "separately": false
+                "separately": true
             }
         ],
         [
@@ -82,9 +50,41 @@
                 "separately": false
             },
             {
+                "teacher": [
+                    "Грищенко В.В.",
+                    "Пятаева И.Н."
+                ],
+                "lessons": [
+                    "Физика лаб",
+                    "Физика лаб"
+                ],
+                "rooms": [
+                    "4к202",
+                    "лаб"
+                ],
+                "num": 2,
+                "separately": true
+            },
+            {
+                "teacher": "Рабе Ю.А.",
+                "lessons": "Обществознание",
+                "rooms": "128",
+                "num": 3,
+                "separately": false
+            },
+            {
+                "teacher": "Борисова И.В.",
+                "lessons": "Литература",
+                "rooms": "309",
+                "num": 4,
+                "separately": false
+            }
+        ],
+        [
+            {
                 "teacher": "Физкультура 11",
                 "lessons": "Физкультура",
-                "rooms": "спортзал2",
+                "rooms": "спортзал3",
                 "num": 2,
                 "separately": false
             },
@@ -97,58 +97,10 @@
             },
             {
                 "teacher": "Борисова И.В.",
-                "lessons": "Литература",
+                "lessons": "Русский язык",
                 "rooms": "309",
                 "num": 4,
                 "separately": false
-            }
-        ],
-        [
-            {
-                "teacher": "Рощенко О.Е.",
-                "lessons": "Алгебра",
-                "rooms": "205",
-                "num": 1,
-                "separately": false
-            },
-            {
-                "teacher": "Рабе Ю.А.",
-                "lessons": "История",
-                "rooms": "128",
-                "num": 2,
-                "separately": false
-            },
-            {
-                "teacher": [
-                    "Пятаева И.Н.",
-                    "Дорожкина А.А."
-                ],
-                "lessons": [
-                    "Методы решения физических задач",
-                    "Ин.яз"
-                ],
-                "rooms": [
-                    "201",
-                    "113"
-                ],
-                "num": 3,
-                "separately": true
-            },
-            {
-                "teacher": [
-                    "Харченко Ю.Д.",
-                    "Пятаева И.Н."
-                ],
-                "lessons": [
-                    "Ин.яз",
-                    "Методы решения физических задач"
-                ],
-                "rooms": [
-                    "307",
-                    "201"
-                ],
-                "num": 4,
-                "separately": true
             },
             {
                 "teacher": "Борисова И.В.",
@@ -160,26 +112,100 @@
         ],
         [
             {
-                "teacher": "Рабе Ю.А.",
-                "lessons": "Обществознание",
-                "rooms": "128",
+                "teacher": "Рощенко О.Е.",
+                "lessons": "Геометрия",
+                "rooms": "205",
+                "num": 1,
+                "separately": false
+            },
+            {
+                "teacher": "Рощенко О.Е.",
+                "lessons": "Алгебра",
+                "rooms": "209",
                 "num": 2,
+                "separately": false
+            },
+            {
+                "teacher": [
+                    "Шевницына Л.В.",
+                    "Пятаева И.Н."
+                ],
+                "lessons": [
+                    "Химия",
+                    "Методы решения физических задач"
+                ],
+                "rooms": [
+                    "1к404",
+                    "201"
+                ],
+                "num": 3,
+                "separately": true
+            },
+            {
+                "teacher": [
+                    "Пятаева И.Н.",
+                    "Шевницына Л.В."
+                ],
+                "lessons": [
+                    "Методы решения физических задач",
+                    "Химия"
+                ],
+                "rooms": [
+                    "201",
+                    "1к404"
+                ],
+                "num": 4,
+                "separately": true
+            }
+        ],
+        [
+            {
+                "teacher": "Рабе Ю.А.",
+                "lessons": "История",
+                "rooms": "128",
+                "num": 1,
                 "separately": false
             },
             {
                 "teacher": "Пятаева И.Н.",
                 "lessons": "Физика",
                 "rooms": "201",
-                "num": 3,
+                "num": 2,
                 "separately": false
             },
             {
-                "teacher": "Борисова И.В.",
-                "lessons": "Литература",
-                "rooms": "309",
+                "teacher": [
+                    "Муль П.Ф.",
+                    "Дорожкина А.А."
+                ],
+                "lessons": [
+                    "Информатика",
+                    "Ин.яз"
+                ],
+                "rooms": [
+                    "305",
+                    "201"
+                ],
+                "num": 3,
+                "separately": true
+            },
+            {
+                "teacher": [
+                    "Харченко Ю.Д.",
+                    "Муль П.Ф."
+                ],
+                "lessons": [
+                    "Ин.яз",
+                    "Информатика"
+                ],
+                "rooms": [
+                    "307",
+                    "305"
+                ],
                 "num": 4,
-                "separately": false
+                "separately": true
             }
-        ]
+        ],
+        []
     ]
 }

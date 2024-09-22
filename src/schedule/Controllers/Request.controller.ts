@@ -16,7 +16,7 @@ export default class RequestController {
 		else
 			console.log('not changes in schedule')
 		const response = await this.dbController.getSchedule()
-		res.json({schedule : response})
+		res.json({ schedule: response })
 	}
 
 	public getCurrent = async (req: Request, res: Response) => {
@@ -25,7 +25,12 @@ export default class RequestController {
 		else
 			console.log('not changes in schedule')
 		const response = await this.dbController.getSchedule()
-		res.json({schedule : response[Number(req.params.day) - 1].length !==0 ? response[Number(req.params.day) - 1] : []})
+		res.json({
+			schedule:
+				Number(req.params.day) >= 2 && Number(req.params.day) < 7 && response[Number(req.params.day) - 1].length !== 0
+					? response[Number(req.params.day) - 1]
+					: []
+		})
 	}
 
 	public getToday = async (req: Request, res: Response) => {
@@ -34,7 +39,12 @@ export default class RequestController {
 		else
 			console.log('not changes in schedule')
 		const response = await this.dbController.getSchedule()
-		res.json({schedule : response[new Date().getDay() - 1]})
+		res.json({ 
+			schedule: 
+			new Date().getDay() >= 2 && new Date().getDay() < 7
+				? response[new Date().getDay() - 1] 
+				: []
+		})
 	}
 
 }

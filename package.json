@@ -1,5 +1,5 @@
 {
-  "name": "project-d-lite",
+  "name": "project-d-lite-back",
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {

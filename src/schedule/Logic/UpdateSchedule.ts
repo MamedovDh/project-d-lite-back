@@ -34,12 +34,12 @@ const createShedule = (NIKA: any) => {
 
 	let answer = []
 
-	for (let i = 1; i <= 5; i++) {  // replace 5 to 6, if 6-day schedule
+	for (let i = 1; i <= 6; i++) {  // replace 5 to 6, if 6-day schedule
 		let day: any = { lessons: [], rooms: [], teacher: [], number: [] }
-		for (const key in NIKA.CLASS_SCHEDULE[keySchedule]['034']) {
+		for (const key in classSchedule) {
 
 			if (key[0] === String(i)) {
-				const current = NIKA.CLASS_SCHEDULE[keySchedule]['034'][key]
+				const current = classSchedule[key]
 
 				day = {
 					lessons: [...day.lessons, [NIKA.SUBJECTS[current.s[0]], NIKA.SUBJECTS[current.s[1]]]],
