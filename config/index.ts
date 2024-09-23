@@ -1,3 +1,12 @@
+/** outside config */
+
+export const CONFIG = {
+	IsDev : true,
+	ForcedUpdate : false
+}
+
+/** inside config */
+
 export enum PORT {
 	SCHEDSULE = 4000,
 	ATTENDANTS = 4001

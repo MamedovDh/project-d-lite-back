@@ -1,7 +1,7 @@
 import cors from 'cors'
 import express from 'express'
 import { Config, JsonDB } from 'node-json-db'
-import { API, PORT } from '../../config/index'
+import { API, CONFIG, PORT } from '../../config/index'
 import DBController from '../schedule/Controllers/DB.controller'
 import RequestController from '../schedule/Controllers/Request.controller'
 
@@ -23,6 +23,6 @@ app.get(API.GET_CURRENT_SCHEDULE, reqController.getCurrent)
 
 
 app.listen(PORT.SCHEDSULE, async () => {
-	console.log('schedule started')
+	if (CONFIG.IsDev) console.log('schedule started')
 })
 

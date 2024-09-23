@@ -5,12 +5,13 @@ export const UpdateAttendants = async (dbController: DBController) => {
 	const thisDate = new Date()
 
 	if (thisDate.getDate() !== lastDate && (thisDate.getDay() !== 0 && thisDate.getDay() !== 6)) {
-		dbController.setLastDate(thisDate.getDate())
-		dbController.getSelectedAttendants().then((selectendAttendants: number) => {
-			dbController.setSelectedAttendants(selectendAttendants !== 13 ? selectendAttendants + 1 : 1)
-			return selectendAttendants !== 13 ? selectendAttendants + 1 : 1
-		})
+		const selectendAttendants: number = await dbController.getSelectedAttendants()
+		
+		await dbController.setLastDate(thisDate.getDate())
+		await dbController.setSelectedAttendants(selectendAttendants !== 13 ? selectendAttendants + 1 : 1)
+
+		return selectendAttendants !== 13 ? selectendAttendants + 1 : 1
 	} else {
-		return await dbController.getSelectedAttendants()
+		return dbController.getSelectedAttendants()
 	}
 }

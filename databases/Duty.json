@@ -1,5 +1,5 @@
 {
-    "selectedAttendants": 4,
+    "selectedAttendants": 9,
     "attendantsList": [
         "Ахметова София",
         "Вялков Максим",
@@ -28,5 +28,5 @@
         "Шварцкопф Софья",
         "Шипилов Артём"
     ],
-    "lastDate": 20
+    "lastDate": 23
 }

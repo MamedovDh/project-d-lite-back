@@ -1,6 +1,6 @@
 import express from 'express'
 import { Config, JsonDB } from 'node-json-db'
-import { API, PORT } from '../../config/index'
+import { API, CONFIG, PORT } from '../../config/index'
 import DBController from '../alisization/Controllers/DB.controller'
 import RequestController from '../alisization/Controllers/Request.controller'
 
@@ -15,5 +15,5 @@ app.get(API.GET_ATTENDANTS_TODAY, reqController.getToday)
 app.get(API.GET_ATTENDANTS_TOMMOROW, reqController.getTommorow)
 
 app.listen(PORT.ATTENDANTS, async () => {
-	console.log('alisization started')
+	if (CONFIG.IsDev) console.log('alisization started')
 })
