@@ -2,7 +2,7 @@ import axios from 'axios'
 import { CONFIG } from '../../../../config'
 
 
-export default class ScheduleService{
+export default class ScheduleService {
 	static async getUpdateNikaName(){
 		let code = 0;
 
@@ -16,7 +16,7 @@ export default class ScheduleService{
 
 	static async getNikaData(nikaName: string) {
 		let code = 0
-		
+
 		do {
 			try {
 				if (CONFIG.IsDev) console.log("request data from", nikaName)

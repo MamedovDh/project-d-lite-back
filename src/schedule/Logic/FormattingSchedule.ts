@@ -13,7 +13,8 @@ export const FormattingSchedule = (schedule: any[]) => {
 					lessons: item.lessons[i].filter((Item: any) => Item != null).join(''),
 					rooms: item.rooms[i].filter((Item: any) => Item != null).join(''),
 					num: Math.round(item.number[i] ? item.number[i] / 2 : item.number[i - 1] / 2),
-					separately : 'false'
+					separately : 'false',
+					cancelled : item.cancelled.includes(i + 1) ? 'true' : 'false'
 				})
 			} else {				
 				day.push({
@@ -21,7 +22,8 @@ export const FormattingSchedule = (schedule: any[]) => {
 					lessons: item.lessons[i],
 					rooms: item.rooms[i],
 					num: Math.round(item.number[i] ? item.number[i] / 2 : item.number[i - 1] / 2),
-					separately : 'true'
+					separately : 'true',
+					cancelled : item.cancelled.includes(i + 1) ? 'true' : 'false'
 				})
 			}
 		}

@@ -2,7 +2,7 @@
 
 export const CONFIG = {
 	IsDev : true,
-	ForcedUpdate : false
+	ForcedUpdate : true
 }
 
 /** inside config */
@@ -17,7 +17,7 @@ export enum API {
 	GET_CURRENT_SCHEDULE = '/getCurrentSchedule/:day',
 	GET_TODAY_SCHEDULE = '/getTodaySchedule',
 	GET_ATTENDANTS_TODAY = '/attendants-today',
-	GET_ATTENDANTS_TOMMOROW = '/attendants-tommorow'
+	GET_ATTENDANTS_TOMMOROW = '/attendants-tomorrow'
 }
 
 export const TIME_OUT_REQUEST = 3600000

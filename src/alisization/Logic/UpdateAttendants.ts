@@ -1,6 +1,6 @@
 import DBController from 'alisization/Controllers/DB.controller'
 
-export const UpdateAttendants = async (dbController: DBController) => {
+export const updateAttendants = async (dbController: DBController) => {
 	const lastDate = await dbController.getLastDate()
 	const thisDate = new Date()
 

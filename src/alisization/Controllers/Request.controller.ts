@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { UpdateAttendants } from '../../alisization/Logic/UpdateAttendants'
+import { updateAttendants } from '../../alisization/Logic/UpdateAttendants'
 import DBController from './DB.controller'
 
 export default class RequestController {
@@ -10,7 +10,7 @@ export default class RequestController {
 	}
 
 	getToday = async (req: Request, res: Response) => {
-		const selectedAttendants = await UpdateAttendants(this.dbController)
+		const selectedAttendants = await updateAttendants(this.dbController)
 		const attendantsList = await this.dbController.getAttendantsList()
 
 		res.json({
@@ -22,7 +22,7 @@ export default class RequestController {
 	}
 
 	getTommorow = async (req: Request, res: Response) => {
-		const selectedAttendants = await UpdateAttendants(this.dbController)
+		const selectedAttendants = await updateAttendants(this.dbController)
 		const attendantsList = await this.dbController.getAttendantsList()
 
 		res.json({
